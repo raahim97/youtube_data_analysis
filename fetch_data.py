@@ -4,9 +4,9 @@ from connection import *
 from insert_data import *
 import pandas as pd
 import json
+import os
 
-
-API_KEY = 'AIzaSyDDFYzkfDadstApPBOSwa5GfhvFgLRwBtU'
+API_KEY = os.environ.get('YOUTUBE_API_KEY')
 part = 'snippet'
 query = 'python'
 max_results = 300
